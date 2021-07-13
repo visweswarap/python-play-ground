@@ -1,0 +1,49 @@
+[{
+	"altName": [ ],
+	"countryIRI": "https://data.platts.com/pleo/_Region_Banana",
+	"countryName": "Banana",
+	"isCountry": "0",
+	"regionIRI": "https://data.platts.com/pleo/_Region_DemocraticRepublicoftheCongo",
+	"regionName": "Congo, Democratic Republic of the"
+},
+{
+	"altName": [
+		"Congo-Brazzaville",
+		"Congo Republic"
+	],
+	"countryIRI": "https://data.platts.com/pleo/_Region_RepublicoftheCongo",
+	"countryName": "Congo (the)",
+	"isCountry": "1",
+	"regionIRI": "https://data.platts.com/pleo/_Region_MiddleAfrica",
+	"regionName": "Middle Africa"
+},
+{
+	"altName": [
+		"Zaire",
+		"DR Congo",
+		"Congo (Democratic Republic of the)",
+		"Democratic Rep. of the Congo"
+	],
+	"countryIRI": "https://data.platts.com/pleo/_Region_DemocraticRepublicoftheCongo",
+	"countryName": "Congo, Democratic Republic of the",
+	"isCountry": "1",
+	"regionIRI": "https://data.platts.com/pleo/_Region_MiddleAfrica",
+	"regionName": "Middle Africa"
+},
+{
+	"altName": [ ],
+	"countryIRI": "https://data.platts.com/pleo/_Region_Matadi",
+	"countryName": "Matadi",
+	"isCountry": "0",
+	"regionIRI": "https://data.platts.com/pleo/_Region_DemocraticRepublicoftheCongo",
+	"regionName": "Congo, Democratic Republic of the"
+},
+{
+	"altName": [ ],
+	"countryIRI": "https://data.platts.com/pleo/_Region_PointeNoire",
+	"countryName": "Pointe Noire",
+	"isCountry": "0",
+	"regionIRI": "https://data.platts.com/pleo/_Region_RepublicoftheCongo",
+	"regionName": "Congo (the)"
+}
+]

@@ -3,4 +3,10 @@ websocket
 flask
 flask-swagger
 pandas
-boto3==1.14.14
+boto3
+fastparquet
+# pyspark==3.0.1
+beautifulSoup4
+requests
+lxml
+bsedata

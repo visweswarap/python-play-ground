@@ -1,32 +1,38 @@
 # Using flask to make an api
 # import necessary libraries and functions
+from bsedata.bse import BSE
 from flask import Flask, jsonify, request
 
 # creating a Flask app
 app = Flask(__name__)
 
-# on the terminal type: curl http://127.0.0.1:5000/
-# returns hello world when we use GET.
-# returns the data that we send when we use POST.
-@app.route('/home', methods = ['GET', 'POST'])
+
+@app.route('/home')
 def home():
-	if(request.method == 'GET'):
+    b = BSE(update_codes=True)
+    top_loosers = b.topLosers()
+    top_gainers = b.topGainers()
+    response = {"top-gaineras": top_gainers, "top-looswers": top_loosers}
+    return response
 
-		data = "hello world"
-		return jsonify({'data': data})
+
+@app.route('/quote', methods=['GET', 'POST'])
+def quote():
+    b = BSE(update_codes=True)
+    response = {}
+    return response
 
 
-# A simple function to calculate the square of a number
-# the number to be squared is sent in the URL when we use GET
-# on the terminal type: curl http://127.0.0.1:5000 / home / 10
-# this returns 100 (square of 10)
-@app.route('/home/<msg>', methods = ['GET'])
+@app.route('/', methods=['GET'])
+def root():
+    return {'Version': '0.0.1', 'Author': "Vish Pepala"}
+
+
+@app.route('/home/<msg>', methods=['GET'])
 def disp(msg):
-
-	return jsonify({'data': msg})
+    return jsonify({'data': msg})
 
 
 # driver function
 if __name__ == '__main__':
-
-	app.run(debug=True, port=5001)
+    app.run(debug=True, port=5001)
