@@ -2,4 +2,5 @@
 
 A play area where I learn python basics.
 
-SQLAlchemy as well
+SQLAlchemy
+Flask Rest APIs
